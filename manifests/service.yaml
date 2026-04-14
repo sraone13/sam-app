@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sra1-app1
+  namespace: namespace-workflow-1776181036350
+  labels:
+    app.kubernetes.io/name: sra1-app1
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: sra1-app1
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
