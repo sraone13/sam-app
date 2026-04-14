@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sra1-app1
-          image: sravanaksregistry.azurecr.io/image-workflow-1776181036350:latest
+          image: sravanaksregistry.azurecr.io/myapp:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
