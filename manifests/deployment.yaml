@@ -7,7 +7,7 @@ metadata:
     kubernetes.azure.com/generator: devhub
   namespace: namespace-workflow-1776181036350
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: sra1-app1
