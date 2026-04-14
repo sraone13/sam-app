@@ -24,11 +24,11 @@ spec:
             - containerPort: 8000
           resources:
             requests:
-              cpu: "0.5"
-              memory: "0.5Gi"
+              cpu: "100m"
+              memory: "128Mi"
             limits:
-              cpu: "1"
-              memory: "1Gi"
+              cpu: "200m"
+              memory: "256Mi"
           envFrom:
             - configMapRef:
                 name: sra1-app1-config
